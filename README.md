@@ -10,6 +10,27 @@ This project focuses on finite element analysis of geological models, particular
 - `step00.cfg`: PyLith configuration file for precise control of simulation startup and execution.
 - `fault_slabtop_slipweakening.spatialdb`: Defines key parameters used in the simulation, such as friction coefficient and cohesion.
 
+## Analysis Parameters
+
+Our current analysis relies on the mechanical parameters specified in Table 1. With the help of PyLith 2.2.2, we are able to precisely simulate the spatial variations in shear strain energy caused by coseismic slips within faults affected by mining operations.
+
+### Mechanical Parameters Used in the Simulation:
+
+- **Poisson's Ratio (ν):** 0.25
+- **Depth Range (h):** 0-1600 meters
+- **Fault Dip Angle (φ):** 30 degrees
+- **Shear Modulus (G):** 6.5 GPa
+- **Mining Level:** 1000 meters
+- **Friction Coefficient (μ):** 0.7
+- **Shear Wave Speed (VS):** 1.65 km/s
+- **Panel Width:** 200 meters
+- **Background Stress Ratio (rb):** 2
+- **Compressional Wave Speed (VP):** 2.74 km/s
+- **Mining Distance Range (Dm):** From -120 to +120 meters
+- **Cohesion Stress Range:** 0-4 MPa
+- **Density (ρ):** 2400 kg/m³
+- **Mining Thickness:** 10 meters
+
 ## Running Guide
 
 1. Refer to the official PyLith documentation to ensure the correct installation of PyLith version 2.2.2.
